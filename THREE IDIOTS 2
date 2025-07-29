@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        float a = in.nextFloat();
+        float b = in.nextFloat();
+        float c = in.nextFloat();
+        float d = in.nextFloat();
+        float m1 = (a+c)/2;
+        float m2 = (b+d)/2;
+        System.out.println("Binoy's house is located at ("+m1+","+m2+")");
+        
+        
+    }
+}
