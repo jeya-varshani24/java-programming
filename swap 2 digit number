@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) { 
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        if (n < 10) {
+            System.out.println("STDOUT");
+            return;
+        }
+        int t = n;
+        while (t >= 100) {
+            t = t/10; 
+        }
+        int firstDigit = t / 10;
+        int secondDigit = t % 10;
+        int swapped = secondDigit * 10 + firstDigit;
+        System.out.println(swapped);
+    }
+}
